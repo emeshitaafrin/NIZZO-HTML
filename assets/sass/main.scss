@@ -604,19 +604,21 @@ figure {
       bottom: -60px;
       
     }
-    .carousel-indicators.active {
-      color: #4e87f7;
-      height: 5px;
-      padding: 0;
-    }
     
     .carousel-indicators [data-bs-target] {
       width: 30px;
-      height: 5px;
-      border-radius: 3px;
+      height: 10px;
+      border-radius: 10px;
+      // background-color: var(--white)
       padding: 0;
+      opacity: 1;
+      border : none;
       margin-right: 3px;
-    }
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+}
     .carousel-inner {
       .carousel-item {
         .slider-img {
@@ -648,6 +650,9 @@ figure {
       }
     }
   }
+}
+.carousel-indicators .active {
+  background-color: #4e87f7;
 }
 /*=== Slider area End ===*/
 
