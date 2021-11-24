@@ -112,14 +112,6 @@ figure {
       transition: all 0.3s ease-in-out;
       &:hover {
         background: #47b0d3;
-        // border: 2px solid;
-        .cs-tooltip {
-          display: block;
-        }
-        a i:before {
-          
-          color: #27272B;
-        }
       }
   
       a {
@@ -662,7 +654,7 @@ figure {
 /*=== Compilance area Start ===*/
 .compilance-area {
   background:  #0d1521 url(../images/NIZZOimagenes-13.png);
-  background-position: center center;
+  background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 250px 0;

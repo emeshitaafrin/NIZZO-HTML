@@ -124,14 +124,6 @@ figure {
   background: #47b0d3;
 }
 
-.social-links ul li:hover .cs-tooltip {
-  display: block;
-}
-
-.social-links ul li:hover a i:before {
-  color: #27272B;
-}
-
 .social-links ul li a i:before {
   font-size: 20px;
   border-radius: 5px;
@@ -704,7 +696,7 @@ figure {
 /*=== Compilance area Start ===*/
 .compilance-area {
   background: #0d1521 url(../images/NIZZOimagenes-13.png);
-  background-position: center center;
+  background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 250px 0;
