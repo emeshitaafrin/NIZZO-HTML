@@ -21,16 +21,6 @@
     overflow: hidden;
     padding: 40px 10px;
   }
-  .hero-area .swiper .swiper-slide .hero-slideItem .banner-content {
-    text-align: center;
-  }
-  .hero-area .slider-hero .swiper-wrapper .swiper-slide .hero-slideItem .banner-content h1 {
-    font-size: 34px;
-    margin-bottom: 20px;
-  }
-  .hero-area .slider-hero .swiper-wrapper .swiper-slide .hero-slideItem .img-box {
-    margin-top: 30px;
-  }
   .footer-area .footer-wrap .social-links ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -53,19 +43,23 @@
   .img-box img {
     width: 100%;
   }
-  .swiper {
-    overflow: hidden;
-    padding: 40px 10px;
+  .feature-area {
+    padding: 120px 0;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 90%, 0 100%, 0 0);
+            clip-path: polygon(50% 0%, 100% 0, 100% 90%, 0 100%, 0 0);
   }
-  .hero-area .swiper .swiper-slide .hero-slideItem .banner-content {
+  .feature-area .site-item figure figcaption {
+    padding: 0;
+  }
+  .service-area .section-content figure .section-img img {
+    width: 100%;
+  }
+  .slider-content {
     text-align: center;
-  }
-  .hero-area .slider-hero .swiper-wrapper .swiper-slide .hero-slideItem .banner-content h1 {
-    font-size: 34px;
-    margin-bottom: 20px;
-  }
-  .hero-area .slider-hero .swiper-wrapper .swiper-slide .hero-slideItem .img-box {
     margin-top: 30px;
+  }
+  .sticky-header.sticky-on.transparent-header .navbar-inner .site-logo {
+    width: 20%;
   }
 }
 
@@ -74,43 +68,14 @@
   .main-btn {
     padding: 14px 30px;
   }
-  .category-item-style, .category-area .slider-category .swiper-wrapper .swiper-slide .category-item,
-  .magazine-area .articale-area .article-top-slider .swiper-wrapper .swiper-slide .category-item {
-    min-height: 210px;
-  }
-  .figure-item-style figure .img-box, .trending-area .slider-trending .swiper-wrapper .swiper-slide .tr-item figure .img-box, .trending-area .slider-blog .swiper-wrapper .swiper-slide .tr-item figure .img-box, .blog-area .slider-trending .swiper-wrapper .swiper-slide .tr-item figure .img-box, .blog-area .slider-blog .swiper-wrapper .swiper-slide .tr-item figure .img-box, .tr-bitem figure .img-box, .magazine-area .magazine-item figure .img-box, .lifestyle-area .lifeStyle-item figure .img-box, .magazine-area-details .magazine-details-area .pdfContent .pdfContent-page .magazine-info .details-img figure .img-box, .magazine-area-details .magazine-details-area .sidebar-widget .free-item figure .img-box {
-    min-height: 240px;
-  }
-  .figure-item-style figure figcaption .caption-area a.btn-readMore, .trending-area .slider-trending .swiper-wrapper .swiper-slide .tr-item figure figcaption .caption-area a.btn-readMore, .trending-area .slider-blog .swiper-wrapper .swiper-slide .tr-item figure figcaption .caption-area a.btn-readMore, .blog-area .slider-trending .swiper-wrapper .swiper-slide .tr-item figure figcaption .caption-area a.btn-readMore, .blog-area .slider-blog .swiper-wrapper .swiper-slide .tr-item figure figcaption .caption-area a.btn-readMore, .tr-bitem figure figcaption .caption-area a.btn-readMore, .magazine-area .magazine-item figure figcaption .caption-area a.btn-readMore, .lifestyle-area .lifeStyle-item figure figcaption .caption-area a.btn-readMore, .magazine-area-details .magazine-details-area .pdfContent .pdfContent-page .magazine-info .details-img figure figcaption .caption-area a.btn-readMore, .magazine-area-details .magazine-details-area .sidebar-widget .free-item figure figcaption .caption-area a.btn-readMore {
-    font-size: 13px;
-  }
-  .hero-area .slider-hero .swiper-wrapper .swiper-slide .hero-slideItem .banner-content .banner-btn a.primari-btn {
-    margin-top: 15px;
-  }
-  .magazine-area .links-area .links-btn a.btn {
-    font-size: 12px;
-  }
-  .category-item-style .icon-box a.heart, .category-area .slider-category .swiper-wrapper .swiper-slide .category-item .icon-box a.heart, .magazine-area .articale-area .article-top-slider .swiper-wrapper .swiper-slide .category-item .icon-box a.heart {
-    padding-top: 60px;
-    padding-bottom: 50px;
-  }
-  .category-item-style .icon-box a.heart i:before, .category-area .slider-category .swiper-wrapper .swiper-slide .category-item .icon-box a.heart i:before, .magazine-area .articale-area .article-top-slider .swiper-wrapper .swiper-slide .category-item .icon-box a.heart i:before {
-    font-size: 30px;
-  }
-  figure figcaption .caption-area .books-title a h4, .trending-area .slider-blog .swiper-wrapper .swiper-slide .tr-item figure figcaption .caption-area .books-title a h4, .blog-area .slider-trending .swiper-wrapper .swiper-slide .tr-item figure figcaption .caption-area .books-title a h4, .blog-area .slider-blog .swiper-wrapper .swiper-slide .tr-item figure figcaption .caption-area .books-title a h4, .tr-bitem figure figcaption .caption-area .books-title a h4, .magazine-area .magazine-item figure figcaption .caption-area .books-title a h4, .lifestyle-area .lifeStyle-item figure figcaption .caption-area .books-title a h4, .magazine-area-details .magazine-details-area .pdfContent .pdfContent-page .magazine-info .details-img figure figcaption .caption-area .books-title a h4, .magazine-area-details .magazine-details-area .sidebar-widget .free-item figure figcaption .caption-area .books-title a h4 {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-  }
-  .figure-item-style figure figcaption .caption-area .books-title a i:before, .trending-area .slider-trending .swiper-wrapper .swiper-slide .tr-item figure figcaption .caption-area .books-title a i:before, .trending-area .slider-blog .swiper-wrapper .swiper-slide .tr-item figure figcaption .caption-area .books-title a i:before, .blog-area .slider-trending .swiper-wrapper .swiper-slide .tr-item figure figcaption .caption-area .books-title a i:before, .blog-area .slider-blog .swiper-wrapper .swiper-slide .tr-item figure figcaption .caption-area .books-title a i:before, .tr-bitem figure figcaption .caption-area .books-title a i:before, .magazine-area .magazine-item figure figcaption .caption-area .books-title a i:before, .lifestyle-area .lifeStyle-item figure figcaption .caption-area .books-title a i:before, .magazine-area-details .magazine-details-area .pdfContent .pdfContent-page .magazine-info .details-img figure figcaption .caption-area .books-title a i:before, .magazine-area-details .magazine-details-area .sidebar-widget .free-item figure figcaption .caption-area .books-title a i:before {
-    padding: 8px;
-    font-size: 12px;
+  .footer-area .footer-wrap .site-logo {
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 359.98px) {
   .navbar-extra {
-    background: #363636;
+    background: #0e1622;
   }
   .mobile-menu-panel {
     width: 100%;

@@ -33,16 +33,6 @@ body {
 
 }
 
-.bg-style {
-  background: linear-gradient(180deg, rgba(39, 39, 39, 0.5) 0%, rgba(97, 96, 96, 0.75) 100%),
-  url(../images/body-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.bg-style2 {
-  background: #D8AE19;
-}
 
 * {
   margin: 0;
@@ -96,55 +86,15 @@ a:hover {
 
 /*======= Global Classes =======*/
 
-.section-space {
-  padding: 35px 0;
-}
-.main-btn {
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  display: block;
-  color: #FFFFFF;
-  padding: 12px 30px;
-  background: #FF3027;
-  border-radius: 100px;
-  position: relative;
-  overflow: hidden;
-  text-transform: capitalize;
-  display: inline-flex;
-  transition: all 100ms linear;
-}
-
-.main-btn i {
-  margin-left: 8px;
-}
-
-.main-btn:hover {
-  color: #fff;
-}
-
-.main-btn::before {
-    content: "";
-    position: absolute;
-    height: 100px;
-    width: 20px;
-    background: rgba(243, 243, 243, 0.5);
-    filter: blur(1px);
-    opacity: 0.9;
-    top: -30px;
-    transition: 0.7s;
-    transform: rotate(-20deg) translateX(-60px);
-}
-
-.main-btn:hover:before {
-    transform: rotate(-20deg) translate(140px, 70px);
-}
-
 figure {
   margin: 0;
 }
 
-
+.btn, button, .btn:focus, :focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
 
 /*======= Reuseable componant start =======*/
 // Social links Style 
@@ -230,8 +180,7 @@ figure {
   justify-content: space-between;
 }
 .site-logo {
-  width: 7%;
-  padding: 15px;
+  width: 15%;
   a {
     img {
       width: 100%;
@@ -261,7 +210,8 @@ figure {
   transition: all 0.3s ease-out 0s;
   position: relative;
   &:hover  {
-    color: var(--primary-color);
+    color: var(--white);
+    background: #093450;
   }
 }
 
@@ -274,70 +224,7 @@ figure {
   opacity: 1;
 }
 
-.navbar-wrapper .nav-menu li.current>a,
-.navbar-wrapper .nav-menu a:hover {
-  color: #D8AE19;
-}
 
-.navbar-wrapper .nav-menu .submenu {
-  display: block;
-  position: absolute;
-  width: 200px;
-  background: #27272B;
-  transition: all 0.3s ease-out 0s;
-  z-index: 99;
-  box-shadow: 0 2px 8px 0 rgba(0, 29, 35, 0.5);
-  left: 0;
-  top: calc(100% + 20px);
-  visibility: hidden;
-  opacity: 0;
-}
-
-.navbar-wrapper .nav-menu .submenu li {
-  margin: 0;
-  line-height: 1;
-}
-
-.navbar-wrapper .nav-menu .submenu li::after {
-  display: none;
-}
-
-.navbar-wrapper .nav-menu .submenu li:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 29, 35, 0.5);
-}
-
-.navbar-wrapper .nav-menu .submenu li a {
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  &::before {
-    display: none;
-  }
-}
-
-.navbar-wrapper .nav-menu .submenu a:hover {
-  background-color: #D8AE19;
-  color: var(--white);
-}
-
-.navbar-wrapper .nav-menu .submenu .dd-trigger i {
-  transform: rotate(-90deg);
-}
-
-.navbar-wrapper .nav-menu .submenu .submenu {
-  left: 100%;
-  top: 50%;
-}
-
-.navbar-wrapper .nav-menu li:hover>.submenu {
-  visibility: visible;
-  opacity: 1;
-  top: 100%;
-}
-
-.navbar-wrapper .nav-menu .submenu li:hover>.submenu {
-  top: 0;
-}
 
 .navbar-wrapper .nav-toggler {
   margin-left: 30px;
@@ -398,9 +285,9 @@ figure {
   padding: 15px 0;
 }
 
-.transparent-header .navbar-wrapper.breakpoint-on .navbar-inner {
-  padding: 15px 0;
-}
+// .transparent-header .navbar-wrapper.breakpoint-on .navbar-inner {
+//   padding: 15px 0;
+// }
 
 .transparent-header .navbar-wrapper.breakpoint-on {
   padding: 0;
@@ -423,7 +310,7 @@ figure {
   top: 0;
   width: 300px;
   height: 100vh;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   z-index: 999;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -466,7 +353,7 @@ figure {
   top: 0;
   height: 100%;
   width: 3px;
-  background-color: #D8AE19;
+  background-color: #4e87f7;
   visibility: hidden;
 }
 
@@ -483,6 +370,11 @@ figure {
   color: var(--white);
   position: relative;
   z-index: 1;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: #4e87f7;
+  }
 }
 
 .mobile-menu-panel .panel-menu .dd-trigger {
@@ -555,33 +447,10 @@ figure {
 
 .sticky-header.sticky-on.transparent-header .navbar-inner {
   border-color: transparent;
-}
-
-.swiper {
-  overflow: hidden;
-  padding: 30px;
-
-  .prev-btn {
-    left: auto;
-    right: 75px;
-  }
-
-  .sw-slide-btn {
-    font-size: 16px;
-    color: var(--white);
-    font-weight: 500;
-    font-family: var(--primary-font);
-    top: 98%;
-    transition: all 0.3s ease-in-out;
-    &::after {
-      display: none;
-    }
-    &:hover {
-      color: #D8AE19;
-    }
+  .site-logo {
+    width: 7%;
   }
 }
-
 
 .hero-area {
   background-color: var(--primary-color);
@@ -620,7 +489,7 @@ figure {
       width: 40%;
       transition: all 0.3s ease-in-out;
       &:hover {
-        background: var(--secondary-color);
+        background: #4e87f7;
         color: var(--primary-color);
       }
     }
@@ -638,7 +507,7 @@ figure {
 
 /*=== Feature area Start ===*/
 .feature-area {
-  background: url(/assets/images/backgroundNizzo-04.jpg);
+  background: url(../images/backgroundNizzo-04.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -648,6 +517,7 @@ figure {
 
   .site-item {
     text-align: center;
+    margin-bottom: 50px;
     figure {
       .item-img {
         img {
@@ -684,15 +554,16 @@ figure {
 /*=== Service area Start ===*/
 .service-area {
   background: linear-gradient( rgba(8, 71, 126, 0.9), rgba(8, 71, 126, 0.7), rgba(255, 255, 255, 0.0)),
-    url(/assets/images/NIZZOimagenes-10.png);
+    url(../images/NIZZOimagenes-10.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 200px;
   padding-bottom: 70px;
   position: relative;
-  margin-top: -150px;
+  margin-top: -200px;
   z-index: -1;
+
   .section-top-content {
     text-align: center;
     padding: 50px 0;
@@ -730,7 +601,7 @@ figure {
 
 /*=== Slider area start ===*/
 .slider-area {
-  background: url(/assets/images/backgroundNizzo-04.jpg);
+  background: url(../images/backgroundNizzo-04.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -758,12 +629,10 @@ figure {
       .carousel-item {
         .slider-img {
           max-width: 250px;
-          img {
-
-          }
         }
 
         .slider-content {
+      
           h3 {
             font-size: 32px;
             font-weight: 500;
@@ -792,8 +661,7 @@ figure {
 
 /*=== Compilance area Start ===*/
 .compilance-area {
-  background: linear-gradient( to left, #0e1622, rgba(14, 22, 34, 0.8),  rgba(255, 255, 255, 0.3)),
-  url(/assets/images/NIZZOimagenes-13.png);
+  background:  #0d1521 url(../images/NIZZOimagenes-13.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -929,7 +797,7 @@ figure {
           transition: all 0.3s ease-in-out;
           font-family: var(--secondary-font);
           &:hover {
-            color: #D8AE19;
+            color: #4e87f7;
 
           }
         }
